@@ -1,6 +1,8 @@
 # NearClipEdit
 
-修改 Koikatu 主相机近裁剪面（near clip plane）的独立插件，用于近距离取景不被裁掉。
+仓库地址：https://github.com/HanYuanyi/NearClipEdit
+
+修改 Koikatu 主相机近裁剪面（near clip plane）的独立插件，用于近距离的模型不被裁掉提前穿模。
 
 ## 前置依赖
 
@@ -16,18 +18,13 @@
 | 配置项 | 默认 | 说明 |
 |---|---|---|
 | `Enabled` | 开 | 总开关 |
-| `Near clip plane` | 0.01 | 范围 0.001 ~ 1.0。0.05 轻微贴近，0.001 为极限 |
+| `Near clip plane` | 0.001 | 范围 0.001 ~ 1.0。默认 0.001 最贴近；0.01 ~ 0.05 更保守 |
 | `Koikatu.exe` | 开 | 在游戏本体里生效 |
 | `KoikatuVR.exe` | 关 | 在本体 VR 启动器里生效 |
 | `CharaStudio.exe` | 关 | 在工作室里生效 |
 
-三个 exe 共用同一份配置，按需勾选即可。
-
-## 自己编译
-
-```bash
-dotnet build -c Release -p:GameDir="你的游戏目录"
-```
+KoikatuVR插件已经有修改近裁剪值的功能，默认关闭
+CharaStudio那边已经有修改裁剪值的插件，默认关闭
 
 ## 实现说明
 
