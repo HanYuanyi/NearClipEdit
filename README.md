@@ -1,7 +1,5 @@
 # NearClipEdit
 
-仓库地址：https://github.com/HanYuanyi/NearClipEdit
-
 修改 Koikatu 主相机近裁剪面（near clip plane）的独立插件，用于近距离的模型不被裁掉提前穿模。
 
 ## 前置依赖
